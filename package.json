@@ -19,7 +19,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "eslint": "^9",
     "eslint-config-next": "15.0.4",
     "eslint-config-prettier": "^9.1.0",
     "postcss": "^8",
