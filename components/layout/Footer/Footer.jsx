@@ -10,7 +10,7 @@ const FooterDivider = () => {
 
 export const Footer = async ({}) => {
   return (
-    <footer className="container px-6 md:px-20 text-center w-full flex flex-col space-y-4 lg:flex-row items-center justify-between py-4 border-t-[0.5px] border-[#edede3]/50">
+    <footer className="container px-6 md:px-20 w-full flex flex-col space-y-4 lg:flex-row items-center justify-between py-4 border-t-[0.5px] border-[#edede3]/50">
       <Link href="/">
         <Logo size="medium" />
       </Link>

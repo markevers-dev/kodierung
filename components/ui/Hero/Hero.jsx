@@ -19,6 +19,7 @@ export const Hero = async ({}) => {
             target: "_self",
           },
           text: "Start Coding!",
+          iconName: "CodeBracket",
         }}
         animateBorder
         className="flex-shrink-0"
