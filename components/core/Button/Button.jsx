@@ -9,7 +9,7 @@ export const Button = ({ className, onClick, content }) => {
     <H_Button
       className={clsx(
         className,
-        "gap-x-2 rounded-lg p-[4px] relative z-10 items-center justify-center overflow-hidden bg-[#edede3] active:text-[#8b479e] hover:bg-[#c8c8ab]",
+        "gap-x-2 rounded-lg p-[2px] relative z-10 items-center justify-center overflow-hidden bg-[#edede3] active:text-[#8b479e] hover:bg-[#c8c8ab]",
         {
           "flex-row-reverse": switchIconPosition,
         }

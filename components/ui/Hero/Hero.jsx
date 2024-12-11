@@ -4,7 +4,7 @@ export const Hero = async ({}) => {
       <div className="font-bold text-3xl sm:text-5xl">
         Code Smarter, Anywhere: Your GitHub IDE in the Browser.
       </div>
-      <div className="font-bold text-2xl">
+      <div className="font-bold text-xl sm:text-2xl">
         Edit, collaborate, and commit directly to your GitHub repos—no setup, no
         hassle
       </div>
