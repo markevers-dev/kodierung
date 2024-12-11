@@ -31,6 +31,10 @@
 ---
 
 ## 🤝 Contributing
+Thank you for considering contributing to this repository! As mentioned above, this project is still in its early stages, so pull requests likely won’t be merged until the first version is nearly complete. However, feedback and suggestions are very welcome.
+
+### 💪 Contributors
+Big thanks to everyone who has provided feedback or contributed in any way! You can see all contributors here:
 
 ---
 
@@ -39,6 +43,7 @@
 ---
 
 ## 📜 License
+This project is licensed under the [GNU General Public License](/LICENSE). You are free to fork and modify the repository, but direct contributions will not be merged until the base version is complete.
 
 ---
 Thank you for checking out the Kodierung repository! It means a lot 💜
