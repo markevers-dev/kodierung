@@ -33,6 +33,7 @@
 ## 🤝 Contributing
 Thank you for considering contributing to this repository! As mentioned above, this project is still in its early stages, so pull requests likely won’t be merged until the first version is nearly complete. However, feedback and suggestions are very welcome.
 
+![Contributors](https://img.shields.io/github/contributors/markevers-dev/kodierung?color=green)
 ---
 
 ## 📨 Support
