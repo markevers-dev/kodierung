@@ -52,4 +52,4 @@
 ## 📜 License
 
 ---
-Thank you for 
+Thank you for checking out the Kodierung repository! It means a lot 💜
