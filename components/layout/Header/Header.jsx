@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Button, Logo } from "components";
+import { Button, Logo, AuthButton } from "components";
 import Link from "next/link";
 
 export const Header = async ({}) => {
@@ -13,18 +13,12 @@ export const Header = async ({}) => {
         <Logo size="large" />
       </Link>
       <nav className="max-sm:hidden"></nav>
+      <AuthButton className="max-lg:hidden" />
       <Button
         content={{
           iconName: "Bars3",
         }}
         className="lg:hidden"
-      />
-      <Button
-        content={{
-          text: "Sign In",
-          iconName: "ArrowRightEndOnRectangle",
-        }}
-        className="max-lg:hidden"
       />
     </header>
   );
