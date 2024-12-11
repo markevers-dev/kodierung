@@ -35,6 +35,8 @@ Thank you for considering contributing to this repository! As mentioned above, t
 
 ### 💪 Contributors
 Big thanks to everyone who has provided feedback or contributed in any way! You can see all contributors here:
+<!-- CONTRIBUTORS_START -->
+<!-- CONTRIBUTORS_END -->
 
 ---
 
