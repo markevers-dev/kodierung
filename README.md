@@ -18,6 +18,7 @@
 - [ ] Handle saving/commiting/pushing
 - [ ] Give the homepage a makeover and write an About Us page/section
 - [ ] Write proper metadata/sitemap/robots.txt
+- [ ] Fill the README with proper content
 
 ---
 
