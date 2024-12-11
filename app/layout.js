@@ -7,6 +7,15 @@ export const metadata = {
     template: "%s | Kodierung",
   },
   description: "A very purple in-browser IDE, connected to GitHub",
+  image: "public/images/repo/social_preview.png",
+  og_title: "Kodierung",
+  og_description: "A very purple in-browser IDE, connected to GitHub",
+  og_image: "public/images/repo/social_preview.png",
+  og_image_alt: "Kodierung Logo",
+  twitter_title: "Kodierung",
+  twitter_description: "A very purple in-browser IDE, connected to GitHub",
+  twitter_image: "public/images/repo/social_preview.png",
+  twitter_image_alt: "Kodierung Logo",
 };
 
 const RootLayout = async ({ children }) => {
