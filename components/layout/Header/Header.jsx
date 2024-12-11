@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { Button, Logo } from "components";
 import Link from "next/link";
-import { audiowide } from "public/fonts/fonts";
 
 export const Header = async ({}) => {
   return (
