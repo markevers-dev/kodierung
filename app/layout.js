@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Header, Footer } from "components";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: {
@@ -23,6 +24,7 @@ const RootLayout = async ({ children }) => {
     <html lang="en">
       <body className="bg-[radial-gradient(ellipse_80%_80%_at_50%_-30%,#8b479e,#2a005a)] text-[#edede3] antialiased max-w-screen">
         <div className="flex min-h-screen h-full w-full flex-col">
+          <SpeedInsights />
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
