@@ -2,25 +2,27 @@
 
 import { Button } from "components";
 import { signIn, signOut, useSession } from "next-auth/react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export const AuthButtonInner = ({ className }) => {
   const { data: session } = useSession();
-  const router = useRouter();
   const pathname = usePathname();
 
-  router.prefetch("/");
+  const handleSignIn = () => {
+    signIn("github", {
+      callbackUrl: pathname,
+    });
+  };
 
   const handleSignOut = () => {
-    signOut();
-    if (pathname !== "/") router.push("/");
+    signOut({ callbackUrl: "/" });
   };
 
   return (
     <>
       {!session ? (
         <Button
-          onClick={() => signIn("github")}
+          onClick={handleSignIn}
           content={{
             text: "Sign in",
             iconName: "ArrowRightEndOnRectangle",
@@ -31,13 +33,11 @@ export const AuthButtonInner = ({ className }) => {
         <Button
           onClick={() => handleSignOut()}
           content={{
-            text: `Sign out ${session.user.name}`,
+            text: `Sign out`,
             iconName: "ArrowRightEndOnRectangle",
           }}
           className={className}
-        >
-          Sign in with {provider}
-        </Button>
+        />
       )}
     </>
   );

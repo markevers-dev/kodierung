@@ -1,11 +1,7 @@
-import { Hero } from "components";
+import { Hero, Button } from "components";
 
 const Page = async ({}) => {
-  return (
-    <div>
-      <Hero />
-    </div>
-  );
+  return <Hero />;
 };
 
 export default Page;
