@@ -18,7 +18,7 @@ export const Accordion = ({ title, items }) => {
   return (
     <section className="container flex flex-col gap-y-4 px-6 sm:px-20">
       <h2 className="text-2xl font-bold sm:text-3xl">{title}</h2>
-      <div className="flex flex-col divide-y divide-[#2a005a] rounded-md bg-[#edede3]">
+      <div className="flex flex-col divide-y divide-[#edede3] rounded-md border-[0.5px] border-[#edede3]/50 bg-[#443b4a]">
         {items.map((item, index) => {
           const { title: itemTitle, text } = item;
           return (
@@ -29,10 +29,10 @@ export const Accordion = ({ title, items }) => {
             >
               {({ open }) => (
                 <>
-                  <DisclosureButton className="flex w-full flex-row items-center justify-between p-4 text-xl font-bold text-[#2a005a]">
-                    <div className="flex w-full flex-row gap-x-2">
+                  <DisclosureButton className="flex w-full flex-row items-center justify-between p-4 text-xl font-bold text-[#edede3]">
+                    <div className="flex flex-row gap-x-2">
                       <p>{`${index + 1}.`}</p>
-                      <p>{itemTitle}</p>
+                      <p className="text-start">{itemTitle}</p>
                     </div>
 
                     <Icon
@@ -44,7 +44,7 @@ export const Accordion = ({ title, items }) => {
                       )}
                     />
                   </DisclosureButton>
-                  <DisclosurePanel className="p-4 font-bold text-black">
+                  <DisclosurePanel className="p-4 font-bold text-[#edede3]">
                     {text}
                   </DisclosurePanel>
                 </>
