@@ -9,6 +9,17 @@
   ],
   "rules": {
     "react/display-name": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "unicorn/filename-case": [
+      "error",
+      {
+        "cases": {
+          "camelCase": true,
+          "kebabCase": false,
+          "pascalCase": true,
+          "snakeCase": false
+        }
+      }
+    ]
   }
 }

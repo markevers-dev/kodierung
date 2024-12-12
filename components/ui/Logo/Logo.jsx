@@ -16,7 +16,7 @@ export const Logo = async ({ className, size, ...logoProps }) => {
         className,
         audiowide.className,
         sizes[size] || sizes.medium,
-        "font-bold underline uppercase pointer-events-none"
+        "pointer-events-none font-bold uppercase underline",
       )}
     >
       Kodierung

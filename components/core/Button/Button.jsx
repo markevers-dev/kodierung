@@ -17,7 +17,7 @@ export const Button = ({
       "group gap-x-2 rounded-lg p-[4px] relative z-10 items-center justify-center overflow-hidden bg-[#edede3] hover:bg-[#c8c8ab] transition-all duration-300",
       {
         "flex-row-reverse": switchIconPosition,
-      }
+      },
     ),
     onClick: onClick,
   };
@@ -25,9 +25,9 @@ export const Button = ({
   const buttonContent = (
     <>
       {animateBorder && (
-        <div className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#8b479e_90deg,transparent_190deg)]" />
+        <div className="absolute inset-0 h-full w-full animate-rotate rounded-full bg-[conic-gradient(#8b479e_90deg,transparent_190deg)]" />
       )}
-      <div className="relative z-20 flex gap-x-2 items-center justify-center px-[calc(1rem-4px)] py-[calc(0.5rem-4px)] w-full h-full rounded-[0.40rem]  bg-[#edede3] text-[#2a005a] group-active:text-[#8b479e] group-hover:bg-[#c8c8ab] transition-all duration-300 font-bold text-md">
+      <div className="text-md relative z-20 flex h-full w-full items-center justify-center gap-x-2 rounded-[0.40rem] bg-[#edede3] px-[calc(1rem-4px)] py-[calc(0.5rem-4px)] font-bold text-[#2a005a] transition-all duration-300 group-hover:bg-[#c8c8ab] group-active:text-[#8b479e]">
         {text}
         {iconName && <Icon name={iconName} size="medium" />}
       </div>
