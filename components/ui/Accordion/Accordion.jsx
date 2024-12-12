@@ -9,11 +9,11 @@ import { Icon } from "components";
 import clsx from "clsx";
 
 export const Accordion = ({ title, items }) => {
-  items.forEach((item) => {
+  for (const item of items) {
     const { title: itemTitle, text } = item;
     if (!itemTitle || !text)
       throw new Error("Accordion items must have a title and text.");
-  });
+  }
 
   return (
     <section className="container flex flex-col gap-y-4 px-6 sm:px-20">

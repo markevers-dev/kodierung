@@ -10,12 +10,13 @@
   "rules": {
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "unicorn/filename-case": [
       "error",
       {
         "cases": {
           "camelCase": true,
-          "kebabCase": false,
+          "kebabCase": true,
           "pascalCase": true,
           "snakeCase": false
         }

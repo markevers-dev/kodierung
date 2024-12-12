@@ -11,7 +11,7 @@ export const Button = ({
 }) => {
   const { text, iconName, switchIconPosition, url } = content;
 
-  const buttonProps = {
+  const buttonProperties = {
     className: clsx(
       className,
       "group gap-x-2 rounded-lg p-[4px] relative z-10 items-center justify-center overflow-hidden bg-[#edede3] hover:bg-[#c8c8ab] transition-all duration-300",
@@ -37,11 +37,11 @@ export const Button = ({
   return (
     <>
       {url ? (
-        <Link href={url.href} target={url.target} {...buttonProps}>
+        <Link href={url.href} target={url.target} {...buttonProperties}>
           {buttonContent}
         </Link>
       ) : (
-        <H_Button {...buttonProps}>{buttonContent}</H_Button>
+        <H_Button {...buttonProperties}>{buttonContent}</H_Button>
       )}
     </>
   );

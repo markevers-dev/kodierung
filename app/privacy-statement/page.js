@@ -16,8 +16,8 @@ const Page = async ({}) => {
       <div className="flex flex-col space-y-4 text-xl font-bold sm:text-2xl">
         <p>
           Your privacy is important. This application does not store, process,
-          or share any of your personal data. Here's how your information is
-          handled:
+          or share any of your personal data. Here&apos;s how your information
+          is handled:
         </p>
         <ul className="space-y-2">
           <ListItem
