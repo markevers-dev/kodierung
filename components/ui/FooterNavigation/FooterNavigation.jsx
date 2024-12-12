@@ -2,22 +2,22 @@ import Link from "next/link";
 
 export const FooterNavigation = async ({}) => {
   return (
-    <nav className="flex flex-col sm:flex-row gap-x-8 gap-y-2 font-bold text-md">
+    <nav className="text-md flex flex-col gap-x-8 gap-y-2 font-bold sm:flex-row">
       <Link
         href="/about"
-        className="hover:text-[#ffff00] transition-colors duration-200"
+        className="transition-colors duration-200 hover:text-[#ffff00]"
       >
         About
       </Link>
       <Link
-        href="/contact"
-        className="hover:text-[#ffff00] transition-colors duration-200"
+        href="/support"
+        className="transition-colors duration-200 hover:text-[#ffff00]"
       >
-        Contact
+        Support
       </Link>
       <Link
         href="/privacy-statement"
-        className="hover:text-[#ffff00] transition-colors duration-200"
+        className="transition-colors duration-200 hover:text-[#ffff00]"
       >
         Privacy Statement
       </Link>

@@ -7,16 +7,16 @@ const sizes = {
   large: "text-4xl sm:text-5xl",
 };
 
-export const Logo = async ({ className, size, ...logoProps }) => {
+export const Logo = async ({ className, size, ...logoProperties }) => {
   return (
     <span
-      {...logoProps}
+      {...logoProperties}
       aria-label="Kodierung Logo"
       className={clsx(
         className,
         audiowide.className,
         sizes[size] || sizes.medium,
-        "font-bold underline uppercase pointer-events-none"
+        "pointer-events-none font-bold uppercase underline",
       )}
     >
       Kodierung

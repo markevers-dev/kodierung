@@ -4,9 +4,9 @@ const Page = async ({}) => {
   const name = await getUsername();
 
   return (
-    <div className="container px-6 sm:px-20 mb-[50px] sm:mb-[100px] w-full flex flex-col space-y-4">
-      <h1 className="font-bold text-3xl sm:text-5xl">About Kodierung</h1>
-      <div className="flex flex-col space-y-2 font-bold text-xl sm:text-2xl">
+    <div className="container mb-[50px] flex w-full flex-col space-y-4 px-6 sm:mb-[100px] sm:px-20">
+      <h1 className="text-3xl font-bold sm:text-5xl">About Kodierung</h1>
+      <div className="flex flex-col space-y-2 text-xl font-bold sm:text-2xl">
         <p>
           Welcome to our platform{name && `, ${name}`}! We’re dedicated to
           providing a seamless and secure experience for developers and tech

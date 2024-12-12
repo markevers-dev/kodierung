@@ -12,7 +12,7 @@ export const LoadingPing = ({
         { "bg-[#edede3]/25": color === "white" },
         { "h-16 w-16": size === "large" },
         { "h-8 w-8": size === "small" },
-        "relative inline-flex animate-ping rounded-full"
+        "relative inline-flex animate-ping rounded-full",
       )}
       role="status"
       aria-label={`Loading ${whatIsLoading}...`}

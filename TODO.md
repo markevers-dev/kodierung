@@ -1,4 +1,5 @@
 # 📋 TODO
+
 - [ ] Refactor code to have reusable components, primarily Typography and the Kodierung Logo (for now)
 - [ ] Upgrade to Next.js 15.1.0
 - [X] Use NextAuth for GitHub authentication

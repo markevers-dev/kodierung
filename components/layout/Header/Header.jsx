@@ -10,16 +10,16 @@ export const Header = async ({}) => {
   return (
     <header
       className={clsx(
-        "container w-full flex flex-row justify-between items-center py-4 sm:py-6 px-6 sm:px-20 border-b-[0.5px] border-[#edede3]/50 mb-[50px] sm:mb-[100px]"
+        "container mb-[50px] flex w-full flex-row items-center justify-between border-b-[0.5px] border-[#edede3]/50 px-6 py-4 sm:mb-[100px] sm:px-20 sm:py-6",
       )}
     >
       <Link href="/">
         <Logo size="large" />
       </Link>
       <nav className="max-sm:hidden"></nav>
-      <div className="flex flex-row gap-x-4 items-center justify-center">
+      <div className="flex flex-row items-center justify-center gap-x-4">
         {name && (
-          <p className="text-md sm:text-lg font-bold max-sm:hidden">{name}</p>
+          <p className="text-md font-bold max-sm:hidden sm:text-lg">{name}</p>
         )}
         <AuthButton className="max-lg:hidden" />
         <Button

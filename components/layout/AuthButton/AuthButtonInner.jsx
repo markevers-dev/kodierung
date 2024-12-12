@@ -4,6 +4,10 @@ import { Button } from "components";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
 
+const handleSignOut = () => {
+  signOut({ callbackUrl: "/" });
+};
+
 export const AuthButtonInner = ({ className }) => {
   const { data: session } = useSession();
   const pathname = usePathname();
@@ -14,26 +18,22 @@ export const AuthButtonInner = ({ className }) => {
     });
   };
 
-  const handleSignOut = () => {
-    signOut({ callbackUrl: "/" });
-  };
-
   return (
     <>
-      {!session ? (
+      {session ? (
         <Button
-          onClick={handleSignIn}
+          onClick={() => handleSignOut()}
           content={{
-            text: "Sign in",
+            text: `Sign out`,
             iconName: "ArrowRightEndOnRectangle",
           }}
           className={className}
         />
       ) : (
         <Button
-          onClick={() => handleSignOut()}
+          onClick={handleSignIn}
           content={{
-            text: `Sign out`,
+            text: "Sign in",
             iconName: "ArrowRightEndOnRectangle",
           }}
           className={className}

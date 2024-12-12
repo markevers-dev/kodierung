@@ -2,12 +2,12 @@ import { Button } from "components";
 
 export const Hero = async ({}) => {
   return (
-    <section className="flex flex-col space-y-8 sm:flex-row items-center justify-center container px-6 sm:px-20 mb-[50px sm:mb-[100px]">
+    <section className="mb-[50px container flex flex-col items-center justify-center space-y-8 px-6 sm:mb-[100px] sm:flex-row sm:px-20">
       <div className="flex flex-col gap-y-4 text-balance">
-        <div className="font-bold text-3xl sm:text-5xl">
+        <div className="text-3xl font-bold sm:text-5xl">
           Code Smarter, Anywhere: Your GitHub IDE in the Browser.
         </div>
-        <div className="font-bold text-xl sm:text-2xl">
+        <div className="text-xl font-bold sm:text-2xl">
           Edit, collaborate, and commit directly to your GitHub repos—no setup,
           no hassle
         </div>
