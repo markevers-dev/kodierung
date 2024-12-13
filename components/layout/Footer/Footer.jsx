@@ -25,6 +25,8 @@ export const Footer = async ({}) => {
           href="https://github.com/markevers-dev/kodierung"
           target="_blank"
           className="self-center text-sm font-bold"
+          role="button"
+          aria-label="View on GitHub"
         >
           <GitHubLogo />
         </Link>
