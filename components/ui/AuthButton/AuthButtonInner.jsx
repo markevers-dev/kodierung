@@ -3,6 +3,7 @@
 import { Button } from "components";
 import { signIn, signOut } from "next-auth/react";
 import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const handleSignOut = () => {
   signOut({ callbackUrl: "/" });
@@ -28,19 +29,29 @@ export const AuthButtonInner = ({
           onClick={() => handleSignOut()}
           content={{
             text: `Sign out`,
-            iconName: "ArrowRightEndOnRectangle",
+            iconName: "ArrowLeftStartOnRectangle",
           }}
           className={className}
         />
       ) : (
-        <Button
-          onClick={handleSignIn}
-          content={{
-            text: "Sign in",
-            iconName: "ArrowRightEndOnRectangle",
-          }}
-          className={className}
-        />
+        <>
+          <Button
+            onClick={handleSignIn}
+            content={{
+              text: "Sign in",
+              iconName: "ArrowRightEndOnRectangle",
+            }}
+            className={clsx(className, "max-lg:hidden")}
+          />
+          <Button
+            onClick={handleSignIn}
+            content={{
+              text: "",
+              iconName: "ArrowRightEndOnRectangle",
+            }}
+            className={clsx(className, "lg:hidden")}
+          />
+        </>
       )}
     </>
   );
