@@ -1,26 +1,29 @@
 "use client";
 
 import { Button } from "components";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signIn, signOut } from "next-auth/react";
 import { usePathname } from "next/navigation";
 
 const handleSignOut = () => {
   signOut({ callbackUrl: "/" });
 };
 
-export const AuthButtonInner = ({ className }) => {
-  const { data: session } = useSession();
+export const AuthButtonInner = ({
+  className,
+  variant = "signIn",
+  pathnameOverride,
+}) => {
   const pathname = usePathname();
 
   const handleSignIn = () => {
     signIn("github", {
-      callbackUrl: pathname,
+      callbackUrl: pathnameOverride || pathname,
     });
   };
 
   return (
     <>
-      {session ? (
+      {variant === "signOut" ? (
         <Button
           onClick={() => handleSignOut()}
           content={{

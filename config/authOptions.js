@@ -8,8 +8,21 @@ export const authOptions = {
     }),
   ],
   secret: process.env.AUTH_SECRET,
+  session: {
+    strategy: "jwt",
+    maxAge: 15 * 60, // 15 minutes
+  },
   callbacks: {
+    async jwt({ token, account, profile }) {
+      if (account && profile) {
+        token.username = profile.login;
+      }
+      return token;
+    },
     async session({ session, token, user }) {
+      if (token?.username) {
+        session.user.username = token.username;
+      }
       if (token?.id) {
         session.user.id = token.id;
       }

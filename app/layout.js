@@ -22,7 +22,7 @@ export const metadata = {
 const RootLayout = async ({ children }) => {
   return (
     <html lang="en">
-      <body className="max-w-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-30%,#8b479e,#2a005a)] text-[#edede3] antialiased">
+      <body className="max-w-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#8b479e,#2a005a)] text-[#edede3] antialiased">
         <div className="flex h-full min-h-screen w-full flex-col">
           <SpeedInsights />
           <Header />
