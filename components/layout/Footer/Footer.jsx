@@ -2,12 +2,6 @@ import Link from "next/link";
 import GitHubLogo from "public/icons/GitHubLogo";
 import { Logo, FooterNavigation } from "components";
 
-const FooterDivider = () => {
-  return (
-    <div className="h-0 w-3/4 border-t-[0.5px] border-[#edede3]/50 xl:hidden" />
-  );
-};
-
 export const Footer = async ({}) => {
   return (
     <footer className="flex w-full flex-col items-center justify-between gap-y-8 border-t-[0.5px] border-[#edede3]/50 bg-[#443b4a] px-6 py-4 2xl:flex-row">
